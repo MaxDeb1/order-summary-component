@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    --Pale_blue: hsl(225, 100%, 94%);
+    --Bright_blue: hsl(245, 75%, 52%);
+    --Very_pale_blue: hsl(225, 100%, 98%);
+    --Desaturated_blue: hsl(224, 23%, 55%);
+    --Dark_blue: hsl(223, 47%, 23%);
+}
+
+*,
+::before, 
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background: no-repeat url("./images/pattern-background-desktop.svg") var(--Pale_blue); 
+}
+
+.container,
+.container * {
+    border-radius: 12px;
+}
+
+.container {
+    position: relative;
+    width: 450px;
+/*     height: 697px; */
+    background: white;
+    color: var(--Desaturated_blue);
+    text-align: center;
+    -webkit-box-shadow: 0px 19px 25px -7px rgba(0,0,0,0.2); 
+    box-shadow: 0px 19px 25px -7px rgba(0,0,0,0.2);
+}
+
+.container header img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+
+main {
+    padding: 40px;
+}
+
+h1,
+.engagement,
+.cancel:hover {
+    color: var(--Dark_blue);
+}
+
+h1 {
+    font-size: 1.8rem;
+}
+
+p {
+    margin: 17px 5px;
+    line-height: 1.65rem;
+}
+
+.subscription {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding: 0 24px;
+    background: var(--Very_pale_blue);
+}
+
+.music_icon {
+    width: 48px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+}
+
+.music_icon img {
+    display:block;
+    margin:auto;
+}
+
+.subscription_details {
+    margin: 5px 0 0 20px;
+    line-height: 1.66rem;
+}
+
+.engagement {
+    font-weight: 700;
+}
+
+.change {
+    margin-left: auto;
+    color: var(--Bright_blue);
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-decoration : underline;
+    cursor: pointer;
+}
+
+.change:hover {
+    color: hsl(245, 75%, 62%);
+    text-decoration : none;
+}
+
+button {
+    width: 100%;
+    height: 50px;
+    margin: 32px 0;
+    background: var(--Bright_blue);
+    color: var(--Very_pale_blue);
+    font-size: 0.95rem;
+    font-weight: 600;
+    border: none;
+    -webkit-box-shadow: 0px 19px 25px -7px rgba(0,0,0,0.25); 
+    box-shadow: 0px 19px 25px -7px rgba(0,0,0,0.25);
+    cursor: pointer;
+    position: relative;
+}
+
+button:hover {
+    background: hsl(245, 75%, 62%);;
+}
+
+.cancel {
+    font-size: 0.95rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.attribution { 
+    position: absolute;
+    bottom: 10px;
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (max-width: 500px) {
+    .container {
+        width: 87.2vw;
+    }
+
+    main {
+        padding-inline: 6.4vw;
+    }
+
+    .subscription {
+        padding-inline: 4.267vw;
+    }
+}
