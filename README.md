@@ -1,5 +1,7 @@
 # Frontend Mentor - Order summary card
 
+[Live site](https://maxdeb1.github.io/order-summary-component/)
+
 ![Design preview for the Order summary card coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
